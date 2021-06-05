@@ -17,4 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('editStudent/{id}', [StudentsController::class, 'editStudent'])->name('post.editPost');
+Route::get('editStudent/{id}', [StudentsController::class, 'editStudent'])->name('post.editStudent');
+
+
+Route::post('addStudent', [StudentsController::class, 'addStudent'])->name('post.addStudent');
