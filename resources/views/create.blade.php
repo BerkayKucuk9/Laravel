@@ -7,12 +7,12 @@
 
 <form method="POST" action="{{ route('post.addStudent') }}">
 @csrf
-<label for="title">Student name:</label>
-<input type="text" name="title" placeholder="Enter post title..."> <br>
-<label for="title">Student surname:</label>
-<input type="text" name="title" placeholder="Enter post title..."> <br>
-<label for="post">Student Description:</label>
-<textarea name="post" rows="3"></textarea>
+<label for="name">Student name:</label>
+<input type="text" id="name" name="name" placeholder="Enter student name..."> <br>
+<label for="surname">Student surname:</label>
+<input type="text" id="surname" name="surname" placeholder="Enter student surname..."> <br>
+<label for="description">Student Description:</label>
+<textarea name="description" id="description" rows="3"></textarea>
 <input type="submit" value="submit">
 </form>
 
